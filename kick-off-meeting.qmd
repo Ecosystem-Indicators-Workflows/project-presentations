@@ -416,15 +416,15 @@ It was created using  [Quarto](https://quarto.org/docs/presentations/), [Mermaid
 
 Slides are available at:
 
-[jrfep.quarto.pub/ecological-indicator-presentation](https://jrfep.quarto.pub/ecological-indicator-presentation).
+[jrfep.quarto.pub/EIW-project](https://jrfep.quarto.pub/ecosystems-indicators-workflows-project).
 
 Source code available at:
 
-[bitbucket.org/iucn-presentations/rle-indicators-presentation](https://bitbucket.org/tracking-ecosystems/ei-presentations).
+[github/Ecosystem-Indicators-Workflows/](https://github.com/Ecosystem-Indicators-Workflows/project-presentations).
 
 ### Images and figures
 
-Figure 1 from @Keith_2025; Figures 2 and 3 from @ARDC_2025_WorkshopReport.
+Figure 3 *Strategic considerations* from @ARDC_2025_WorkshopReport.
 
 Photos from:
 

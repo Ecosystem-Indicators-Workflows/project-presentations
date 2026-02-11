@@ -2,44 +2,37 @@ flowchart LR
     A[Work Package 5<br>Indicator Workflow<br>Catalogue & Dashboard]:::wp
 
     subgraph Activities
-        A1[Requirements Gathering<br>with stakeholders & end users]:::act
+        A1[Requirements gathering<br>with stakeholders & end users]:::act
         A2["Design & Operationalise<br>Catalogue (MVP)"]:::act
         A3[Dashboard App for<br>Indicator Development Tracking]:::act
     end
-    A1b["Identify functionality for<br>key user groups<br>Identify requirements for:<br>Metadata structure<br>Integration points<br>User interface"]:::act
-    A2a["Catalogue design"]:::act
-    A2b[Build & deploy MVP]:::act
-    A3a[Design dashboard metrics,<br> hierarchy views,<br>status/coverage indicators]:::act
-    A3b[Build & deploy MVP]:::act
+    A1b["Identify functionality and requiremens<br>for key user groups<br>(Metadata, Integration, User interface)"]:::act
+    A2a["Catalogue design<br>Build & deploy MVP"]:::act
+    A3a["Design dashboard metrics<br>(views, status/coverage)<br>Build & deploy MVP"]:::act
 
     subgraph Deliverables
         D1["High-level requirements &<br>constraints documented"]:::del
-        D2["User requirements<br>for catalogue outlined"]:::del
+        D2["User requirements<br>for catalogue/dashboard<br>outlined"]:::del
         D3["Catalogue design<br>documented"]:::del
         D4["Workflow catalogue<br>MVP operational"]:::del
-        D5["User requirements<br>for dashboard outlined"]:::del
+        %%D5["User requirements<br>for dashboard outlined"]:::del
         D6["Dashboard MVP<br>operational"]:::del
     end
 
     %% Activity structure
     A --> A1 --> A1b
-    
-
     A --> A2 --> A2a
-    A2 --> A2b
 
     A --> A3 --> A3a
-    A3 --> A3b
 
     %% Activities to Deliverables mapping
     A1 --> D1
     A1b --> D2
 
-    A2a --> D3
-    A2b --> D4
+    A2a --> D3 & D4
 
-    A3a --> D5
-    A3b --> D6
+    %%A3a --> D5
+    A3a --> D6
 
     %% Styles
     Activities:::Empty
