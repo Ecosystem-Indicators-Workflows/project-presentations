@@ -1,0 +1,7 @@
+flowchart TD
+    A(Researcher):::Actors <-->|Scientific rigour<br>Robust| I{Indicator}
+    I -->|Informative<br>Effective<br>Simple| C[Decision maker]:::Actors
+    I -->|Actionable<br>Practical| G[Practitioner]:::Actors
+    linkStyle 0,1,2 stroke-width:4px,color:brown;
+    style I fill:#f9f,stroke:#333,stroke-width:4px
+    classDef Actors fill:#9bc,stroke:#88a,stroke-width:2px,color:#fff

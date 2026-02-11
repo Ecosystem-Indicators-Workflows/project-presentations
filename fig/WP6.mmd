@@ -1,0 +1,51 @@
+flowchart LR
+    A[Work Package 6<br>Community Building & Engagement,<br>Communication, Skills & Training]:::wp
+
+    subgraph Activities
+        A1[Develop Engagement &<br>Communications Plan]:::act
+        A2[Grow the Ecosystem Indicator<br>Developer Community]:::act
+        A3[Develop training &<br>user support materials]:::act
+        A4[Run user workshops]:::act
+        A5[Collect & describe<br>user stories]:::act
+    end
+
+    Subactivity2[Identify stakeholders<br>Define engagement plan<br>Develop communications &<br>onboarding materials<br>Run community<br>engagement activities]:::act
+    Subactivity4[Train users on workflows<br>Test reproducibility<br>Publish code &<br>data outputs from workshops]:::act
+
+    subgraph Deliverables
+        D1["Communication & Engagement<br>plan developed"]:::del
+        D2["User training & support<br>materials published"]:::del
+        D3["User workshops delivered"]:::del
+        D4["Published data & code<br>outputs from workshops"]:::del
+        D5["User stories published"]:::del
+        D6["Engagement & communication<br>activities executed"]:::del
+    end
+
+    %% Activity structure
+    A --> A1
+    A --> A2 --> Subactivity2
+    A --> A3
+    A --> A4 --> Subactivity4
+    A --> A5
+
+    %% Activities to Deliverables mapping
+    A1 --> Subactivity2 -->D1
+    A3 --> D2
+
+    Subactivity4 --> D3 & D4
+
+    A5 --> D5
+
+    %% Execution of the plan
+    
+    Subactivity2 --> D6
+    %%A3 --> D6
+    %%Subactivity4 --> D6
+
+    %% Styles
+    Activities:::Empty
+    Deliverables:::Empty
+    classDef Empty fill:none,stroke:black;
+    classDef wp fill:#0b6efd,color:#fff,stroke:#084298,stroke-width:2px;
+    classDef act fill:#e7f1ff,color:#052c65,stroke:#9ec5fe,stroke-width:1px;
+    classDef del fill:#e8f5e9,color:#1b5e20,stroke:#a5d6a7,stroke-width:1px;

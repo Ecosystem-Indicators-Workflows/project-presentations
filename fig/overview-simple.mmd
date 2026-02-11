@@ -1,0 +1,15 @@
+flowchart TD
+    subgraph "Core team and partners "
+        WP1[WP1 establishment] 
+        WP2[WP2 Requirements] 
+    end
+    subgraph "End users"
+        WP5[WP5 Catalogue]
+    end
+    subgraph "WP6 User community"
+        WP4((WP4 Workflows)) 
+        WP3[WP3 Data/Metadata]
+    end
+    WP2--> WP3 & WP4
+    WP3 --> WP4
+    WP4 --> WP5

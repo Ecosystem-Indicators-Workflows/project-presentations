@@ -1,0 +1,31 @@
+flowchart LR
+    A[Work Package 1:<br>Establishment Activities]:::wp
+
+    subgraph Activities
+        A1[Recruit & appoint:<br>Project Manager<br>Community Manager<br> Technical roles]:::act
+        A2[Establish committees]:::act
+        A3[Project web page with DOI]:::act
+        A4["ARDC’s FAIR initiation activity"]:::act
+    end
+    subgraph Deliverables
+    D1["All roles fulfilled"]:::del
+    D2["Committees established:<br>Fixed membership<br>Meeting schedule<br>Endorsed Terms of Reference"]:::del
+    D3["Project web page published"]:::del
+    D4["ARDC’s FAIR initiation Activity<br>completed"]:::del
+    end
+    A --> A1
+    A --> A2
+    A --> A3
+    A --> A4
+
+    A1 --> D1
+    A2 --> D2
+    A3 --> D3
+    A4 --> D4
+
+    Activities:::Empty
+    Deliverables:::Empty
+    classDef Empty fill:none,stroke:black;
+    classDef wp fill:#0b6efd,color:#fff,stroke:#084298,stroke-width:2px;
+    classDef act fill:#e7f1ff,color:#052c65,stroke:#9ec5fe,stroke-width:1px;
+    classDef del fill:#e8f5e9,color:#1b5e20,stroke:#a5d6a7,stroke-width:1px;

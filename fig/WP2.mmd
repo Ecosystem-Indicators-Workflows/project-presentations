@@ -1,0 +1,39 @@
+flowchart LR
+    A["Work Package 2<br>Requirements Gathering &<br>Workflow Development Planning"]:::wp
+
+    subgraph Activities
+        A1[Requirements Gathering]:::act
+        A2[Implementation Plans]:::act
+        A3[Two-year Workflow<br>Development Roadmap]:::act
+    end
+    
+    SubActivities1["Functionality for key user groups<br>Detailed use cases<br>High-level requirements &<br>constraints"]:::act
+    
+    A2a[PID implementation plan]:::act
+    A2b[FAIR4RS implementation plan]:::act
+
+
+    SubActivities3["Detailed use cases<br>Priorities for Tranche 1<br>Priorities for Tranche 2<br>Review and update requirements"]:::act
+
+    D1["Ecosystem Indicators workflow<br>development plan"]:::del
+    D2["Persistent Identifiers (PID)<br>implementation plan"]:::del
+    D3["FAIR for datasets &<br>research software (FAIR4RS)<br>implementation plan"]:::del
+    
+
+    %% Activity structure
+    A --> A1 --> SubActivities1
+    A --> A2 --> A2a & A2b
+    A --> A3 --> SubActivities3
+
+    %% Activities to Deliverables mapping
+    SubActivities1 --> D1
+    A2a --> D2
+    A2b --> D3
+    SubActivities3 --> D1
+
+    %% Styles
+    Activities:::Empty
+    classDef Empty fill:none,stroke:black;
+    classDef wp fill:#0b6efd,color:#fff,stroke:#084298,stroke-width:2px;
+    classDef act fill:#e7f1ff,color:#052c65,stroke:#9ec5fe,stroke-width:1px;
+    classDef del fill:#e8f5e9,color:#1b5e20,stroke:#a5d6a7,stroke-width:1px;

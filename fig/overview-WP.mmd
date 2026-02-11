@@ -1,0 +1,24 @@
+flowchart LR
+    WP1["WP1: Establishment"]:::WPtodo
+    WP2["WP2: Requirements & planning"]:::WPtodo
+    WP3["WP3: Data & Metadata<br>(and tools)"]:::WPtodo
+    WP4["WP4: Workflow delivery"]:::WPtodo
+    WP5["WP5: Catalogue & dashboard"]:::WPtodo
+    WP6["WP6: Community building"]:::WPtodo
+    RL1{{"Data<br>Scientists"}}:::RoleCore
+    RL2{{"Research<br>software<br>team"}}:::RoleCore
+    RL3{{"Community<br>Engagement"}}:::RoleCore
+    RL4(("Additional<br>Partners")):::RoleExt
+    RL5{{"Research<br>Expertise"}}:::RoleCore
+    RL6(("End-user<br>Community")):::RoleExt
+    RL7(("Larger<br>Research<br>Community")):::RoleExt
+    WP1 --> RL1 & RL2 & RL3 & RL5
+    RL1 --> WP4 --> WP5
+    RL1 & RL2 --> WP2 --> WP3 & WP4
+    RL2 --> WP3 --> WP4
+    RL4 -.-> WP3
+    RL3 & RL5 --> WP6 --> RL7 --> WP4
+    WP1 & WP6 -.-> RL6 --> WP5
+    classDef WPtodo fill:white,stroke:#E51875,color:#E51875, stroke-width:4px
+    classDef RoleExt fill:#fff,stroke:#8E489B,color:#8E489B, stroke-width:2px
+    classDef RoleCore fill:white,stroke:#00B0D5,color:black, stroke-width:4px

@@ -1,0 +1,442 @@
+---
+title: "Ecosystems Indicators Workflows Project"
+subtitle: "Project overview, work packages and deliverables"
+editor_options: 
+  chunk_output_type: console
+format: 
+  revealjs:
+    theme: default
+    footer: "Ecosystem Indicatos Workflows kick-off meeting / 16 Feb 2026 / EIW project team"
+    logo: assets/logo_CES.png
+    css: 
+     - css/logo.css
+     - css/custom.css
+bibliography: references.bib
+preview-links: true
+title-slide-attributes:
+    data-background-image: "assets/slide-header-2.png"
+    data-background-size: contain
+---
+
+### ARC Industry Laureate research fellowship
+Goal: build Australian capacity for implementing a nature positive agenda
+
+```{mermaid}
+flowchart LR
+    subgraph IN["Industry needs"]
+        IN1["<p style='width:240px; text-align:left; margin:0px;'><b>Policy drivers</b>
+<br>- Nature Positive Plan
+<br>- Global Biodiversity Framework
+<br>- Federal & state laws & policy
+<br>- Business & community activity</p>"]:::INClass
+    end
+    subgraph LD["Laureate deliverables"]
+        D1["<p style='width:250px; text-align:left; margin:0px;'><b>1. Foundational data streams</b>
+<br>- National Ecosystem Inventory
+<br>- Threats & time series data</p>"]:::DClass
+        D2["<p style='width:250px; text-align:left; margin:0px;'><b>2. Training and development</b>
+<br>- Reference resources & tools
+<br>- Direct learning activities<br>&nbsp;&nbsp;(workshops & e-courses)</p>"]:::DClass
+        D3["<p style='width:250px; text-align:left; margin:0px;'><b>3. Applications &<br>proof of concept</b>
+<br>- National risk assessments<br>for priority ecosystem themes</p>"]:::DClass
+    end
+    subgraph PIS["Pathways to Impact"]
+    direction LR
+    PI1["Australian leadership &<br> global Influence"]:::PIClass2
+    PI2["<p style='width:200px; text-align:left; margin:0px;'><b>Implementing action</b>
+<br>A Protected areas
+<br>B Statutory listings of TEC
+<br>C Regional planning
+<br>D Regulatory functions
+<br>E Ecosystem management
+<br>F Conservation programs
+<br>G Climate adapatation
+<br>H Monitoring & reporting
+<br>I Restoration investments</p>"]:::PIClass2
+    end
+    PIS:::Empty
+    LD:::Empty
+    IN:::Empty
+    K1{{Key<br>capacity<br>needs}}:::Key
+    K2{{Industry<br>Transformation}}:::Key
+    IN1 --> K1 -->D1 & D2 & D3 --> K2 --> PIS
+    classDef Key fill:none, stroke-width:4px, font-weight: bold;
+    classDef PIClass2 fill:#ECECBB;
+    classDef INClass fill:#96DAE4;
+    classDef DClass fill:#CDEEAA;
+    classDef Empty fill:none, stroke-width:4px, font-weight: bold, font-size: large;
+```
+
+
+## {background-image=img/EII-workshop-figure-3.jpg}
+
+::: {style="position: absolute; bottom: 100px; right: 50px;"}
+@ARDC_2025_WorkshopReport
+:::
+
+
+:::{.notes}
+
+Last year in May we held a workshop with ARDC to explore the role of research infrastructure in supporting environmental indicators in Australia.
+
+We identifieed  a strategic opportunity to elevate environmental indicators from static reporting tools to dynamic instruments for foresight and planning. 
+
+Using robust and validated indicators to assess current biodiversity and ecosystem condition and to model future scenarios can lead to more proactive, data-driven policy and decision-making. 
+
+This approach not only fulfils international and national reporting obligations but also empowers long-term environmental
+stewardship through targeted actions that build resilience.
+
+Achieving this requires sustained support to advance scientific knowledge, develop new methods, and deliver outputs in
+forms that end users can readily adopt. 
+
+Environmental Indicators Initiative
+https://ardc.edu.au/project/environmental-indicators-initiative/
+
+National-Scale Integrated Datasets and Services: https://ardc.edu.au/program/national-scale-integrated-datasets-and-services/
+
+:::
+
+## {.smaller}
+
+Australia's diverse ecosystems require tailored indicators for monitoring, assessment, and management.
+
+::: {.panel-tabset}
+
+### TF1.6
+
+TF1.6 Boreal, temperate and montane peat bogs, e.g. Alpine bogs in Tasmania.
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+<a data-flickr-embed="true" data-header="true" data-footer="true" href="https://www.flickr.com/photos/apurdam/11540276563/in/photostream/" title="Approaching Lake Bill"><img src="https://live.staticflickr.com/3675/11540276563_5c10033bf2_w.jpg" width="400" height="267" alt="Approaching Lake Bill"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+:::
+
+::: {.column width="60%"}
+
+```{dot}
+//| fig-width: 6.5
+//| fig-align: center
+//| file: fig/CEM-Alpine-bogs-simple.gv
+```
+
+:::
+
+::::
+
+
+### F2.5 
+
+F2.5 Ephemeral freshwater lakes, e.g. Menindee Lakes, Lake Cowal, Peery Lake, etc.
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+<a title="NASA&#039;s Earth Observatory, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Menindee_Lakes,_New_South_Wales,_Australia_-_NASA_Earth_Observatory.jpg"><img width="512" alt="A system of ephemeral, freshwater lakes which are fed by overflow of the Darling River in Australia" src="img/F2_5.jpg"></a>
+
+:::
+
+::: {.column width="60%"}
+
+*Key processes*: Water volume-chemistry interactions & trophic web, river inflows
+
+*Key threats*: Water extraction, water pollution, eutrophication, climate change
+
+:::
+
+::::
+
+
+
+### M1.1
+
+M1.1 Seagrass meadows, e.g. Shark Bay in Western Australia
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+<a title="Julien Willem, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Dugong_Marsa_Alam.jpg"><img width="512" alt="Dugong near Marsa Alam, Egypt" src="img/M1_1.jpg"></a>
+
+:::
+
+::: {.column width="60%"}
+
+*Key processes*: Interactions & trophic web, low-energy waves vs. storms
+
+*Key threats*: Sedimentation, eutrophication, climate change
+
+:::
+
+::::
+
+### T2.5 
+
+T2.5 Temperate pyric humid forest: Alpine Ash forests, Jillaga ash, Blue mnts ash, White ash forests, ...
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+<a data-flickr-embed="true" data-header="true" data-footer="true" href="https://www.flickr.com/photos/nicholasjones/16653543556" title="Mountain Ash of the Black Spur Drive"><img src="https://live.staticflickr.com/8648/16653543556_a498546030_w.jpg" width="400" height="267" alt="Mountain Ash of the Black Spur Drive"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+:::
+
+::: {.column width="60%"}
+
+*Key processes*: Vegetation-fire feedbacks, trees as foundation spp for other biota & functions
+
+*Key threats*: Logging & fire regime shift, climate change
+
+:::
+
+::::
+
+### T1.1 
+
+T1.1 Tropical-subtropical lowland rainforest, e.g. Gondwana rainforests, warm temperate rainforests, ...
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+<a title="Andrea Schaffer from Sydney, Australia, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Gondwana_rainforest_at_Dorrigo_National_Park_(6611254443).jpg"><img width="512" alt="Gondwana rainforest at Dorrigo National Park (6611254443)" src="img/T1_1.jpg"></a>
+
+:::
+
+::: {.column width="60%"}
+
+*Key processes*: Trophic web, gap dynamics, microclimate feedbacks, foundation species
+
+*Key threats*: Climate change, fire regime shifts, invasive species, logging legacies
+
+:::
+
+::::
+
+### T5.1 
+
+T5.1 Semi-desert steppe: Chenopod shrublands, Bluebush sandplains, Hay plain, Stony downs
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+:::
+
+::: {.column width="60%"}
+
+*Key processes*: Climate variability, herbivory & trophic regulation
+
+*Key threats*: Soil degradation, nutrient flux, land use change
+
+:::
+
+::::
+
+:::
+
+::: notes
+
+This is all very abstract, but let me illustrate this. If somebody in Australia wants to know about a particular species they can go to ALA and find all the information they need. 
+
+Imagine a similar knowledge portal for ecosystems, where users can browse ecosystem classification, explore maps of their distribution, download images, and learn about key processes and threats, etc. 
+
+Particularly we would like to have tools that allow user to identify ecosystem and models that display the functional links between biotic and abiotic features. 
+
+
+:::
+
+## Why this project?
+
+Bottleneck in scaling indicator development across Australia's diverse ecosystems.
+
+::: {.r-stretch style="background:#fff4e8; padding:2rem; border-radius:12px;"}
+### 🚨 Existing approaches
+- Generic indicators
+- Fragmented, ad‑hoc analytical methods  
+- Limited scalability & poor reproducibility  
+- Lack of reusable tools & documentation  
+- Hard to develop indicators consistently across ecosystems  
+:::
+
+
+## 🧰 Our Response
+
+Reproducible workflows for fit-for-purpose ecosystem‑specific indicators.
+
+::: {.r-stretch style="background:#eef7ff; padding:2rem; border-radius:12px;"}
+
+### 🔧 What We're Building
+
+- Modular, transparent, reproducible workflows  
+- Guided examples for all skill levels  
+- Shared standards: FAIR data, vocabularies & interoperability  
+- A community of practice for collaboration & skill sharing  
+:::
+
+## Aims & Impacts
+
+A framework for developing fit-for-purpose ecosystem-specific indicators
+
+::: {style="background:#e8fef3; padding:1rem; border-radius:12px;"}
+- Design modular, transparent, and reproducible workflow adaptable to:
+  - Different datasets  
+  - Ecosystem types  
+  - Policy and reporting needs  
+:::
+
+::: {style="background:#eef1ff; padding:1rem; border-radius:12px;"}
+Transparent, defensible, scientifically rigorous indicators
+:::
+
+## Aims & Impacts
+
+A community of practice for collaboration & skill sharing 
+
+::: {style="background:#e8fef3; padding:1rem; border-radius:12px;"}
+- Support users with different expertise through guided examples.
+- Foster a *community of practice* for collaboration and co‑development.
+:::
+::: {style="background:#eef1ff; padding:1rem; border-radius:12px;"}
+Increase capacity and empower the user community
+:::
+
+## Aims & Impacts
+
+Accelerate development of fit-for-purpose ecosystem-specific indicators.
+
+::: {style="background:#e8fef3; padding:1rem; border-radius:12px;"}
+- Enable scalable, adaptable ecosystem-specific indicator development.
+- Track progress across hierarchical levels of ecosystem classification.
+:::
+::: {style="background:#eef1ff; padding:1rem; border-radius:12px;"}
+Scalable systems supporting national environmental reporting and actionable insights for decision‑making.
+:::
+
+
+
+## 📦 Outcomes
+
+::: {.r-stretch style="background:#f5fff2; padding:2rem; border-radius:12px;"}
+### 🧩 Core Deliverables
+- Modular workflow toolbox  
+- Scalable, adaptable indicator workflows  
+- FAIR analysis‑ready datasets  
+- Interoperable tools aligned to shared vocabularies  
+- A connected and empowered user community  
+:::
+
+##  👥 Beneficiaries {.smaller}
+
+::: {.r-stretch style="background:#fff7e8; padding:2rem; border-radius:12px;"}
+- **Researchers:** Increased opportunities and alignment with national and international initiatives.
+- **Ecologists & conservation managers:** Access to reports supporting monitoring, assessment, management.
+- **Researchers & government agencies:** Integrated data + reproducible methods for policy, restoration, reporting.
+- **Programmers with ecosystem knowledge:** Contribute to co-design, enable innovation.
+- **Students & early‑career professionals:** Skill development in reproducible science, modelling, workflow design.
+:::
+
+## Overview of Work packages
+
+```{mermaid}
+%%| fig-width: 6.5
+%%| fig-align: center
+%%| file: fig/overview-WP.mmd
+%%| fig-responsive: false
+```
+
+
+## Work package details
+
+```{mermaid}
+%%| fig-width: 6.5
+%%| fig-align: center
+%%| file: fig/WP1.mmd
+%%| fig-responsive: false
+```
+
+## Work package details
+
+```{mermaid}
+%%| fig-width: 6.5
+%%| fig-align: center
+%%| file: fig/WP2.mmd
+%%| fig-responsive: false
+```
+
+## Work package details
+
+```{mermaid}
+%%| fig-width: 6.5
+%%| fig-align: center
+%%| file: fig/WP3.mmd
+%%| fig-responsive: false
+```
+## Work package details
+
+```{mermaid}
+%%| fig-width: 6.5
+%%| fig-align: center
+%%| file: fig/WP4.mmd
+%%| fig-responsive: false
+```
+
+## Work package details
+
+```{mermaid}
+%%| fig-width: 6.5
+%%| fig-align: center
+%%| file: fig/WP5.mmd
+%%| fig-responsive: false
+```
+
+## Work package details
+
+```{mermaid}
+%%| fig-width: 6.5
+%%| fig-align: center
+%%| file: fig/WP6.mmd
+%%| fig-responsive: false
+```
+
+##  {.smaller background-image="https://live.staticflickr.com/65535/54676036502_07d648f4ab_b.jpg" background-opacity="0.3"}
+
+This presentation was prepared by José R. Ferrer-Paris and is shared under license: [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed)
+
+::: panel-tabset
+### Links
+
+It was created using  [Quarto](https://quarto.org/docs/presentations/), [Mermaid](https://mermaid.js.org/), [Graphviz](https://graphviz.org/) and [reveal.js](https://revealjs.com/). 
+
+Slides are available at:
+
+[jrfep.quarto.pub/ecological-indicator-presentation](https://jrfep.quarto.pub/ecological-indicator-presentation).
+
+Source code available at:
+
+[bitbucket.org/iucn-presentations/rle-indicators-presentation](https://bitbucket.org/tracking-ecosystems/ei-presentations).
+
+### Images and figures
+
+Figure 1 from @Keith_2025; Figures 2 and 3 from @ARDC_2025_WorkshopReport.
+
+Photos from:
+
+Wikimedia images: - [Menindee_Lakes, New_South_Wales, Australia - NASA Earth Observatory](https://commons.wikimedia.org/wiki/File:Menindee_Lakes,_New_South_Wales,_Australia_-_NASA_Earth_Observatory.jpg) - [Gondwana rainforest at Dorrigo National Park](https://commons.wikimedia.org/wiki/File:Gondwana_rainforest_at_Dorrigo_National_Park_%286611254443%29.jpg) - [Dugong Marsa Alam](https://commons.wikimedia.org/wiki/File:Dugong_Marsa_Alam.jpg)
+
+Flickr images: - ["Approaching Lake Bill"](https://www.flickr.com/photos/apurdam/11540276563/in/photostream/) by [Andrew Purdam](https://www.flickr.com/photos/apurdam/) - ["Mountain Ash of the Black Spur Drive"](https://www.flickr.com/photos/nicholasjones/16653543556) by [Nicholas Jones](https://www.flickr.com/photos/nicholasjones/) - ["Fuente"](https://flic.kr/p/2riwYLw) by [José Rafael Ferrer-Paris](https://www.flickr.com/photos/199798864@N08/)
+
+Other diagrams created with Graphviz and Mermaid with source code shared under the CC BY-SA 4.0 license.
+
+### References
+
+::: {#refs}
+:::
+
+:::

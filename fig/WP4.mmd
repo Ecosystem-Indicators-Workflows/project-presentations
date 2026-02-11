@@ -1,0 +1,50 @@
+flowchart LR
+    A[Work Package 4<br>Workflow Delivery]:::wp
+
+    subgraph Activities
+        A1[Develop analysis code]:::act
+        A2["Develop & test<br>workflows (incl. end users)"]:::act
+        A3[Operationalise<br>platform services]:::act
+        A4[Implement PID plan]:::act
+        A5["Implement FAIR4RS plan<br>(FAIR4RS)"]:::act
+    end
+
+    Subactivity1[Tranche 1 functionality<br>Tranche 2 functionality]:::act
+    Subactivity2[Tranche 1 workflows<br>Tranche 2 workflows]:::act
+    Subactivity3[Develop operational<br>processes & procedures<br>Deploy & validate<br>on hosting platforms]:::act
+
+    subgraph Deliverables
+        D1["Delivery of 1st tranche<br>workflow functionality"]:::del
+        D2["Delivery of 2nd tranche<br>workflow functionality"]:::del
+        D3["Platform services processes<br> & procedures<br>operational and documented"]:::del
+        D4["PID implementation plan<br>implemented"]:::del
+        D5["FAIR4RS plan<br> implemented"]:::del
+    end
+
+    %% Activity structure
+    A --> A1 --> Subactivity1
+
+    A --> A2 --> Subactivity2
+
+    A --> A3 --> Subactivity3
+
+    A --> A4
+    A --> A5
+
+    %% Activities to Deliverables mapping
+    Subactivity1 --> D1
+
+    Subactivity2 --> D2
+
+    Subactivity3 --> D3
+
+    A4 --> D4
+    A5 --> D5
+
+    %% Styles
+    Activities:::Empty
+    Deliverables:::Empty
+    classDef Empty fill:none,stroke:black;
+    classDef wp fill:#0b6efd,color:#fff,stroke:#084298,stroke-width:2px;
+    classDef act fill:#e7f1ff,color:#052c65,stroke:#9ec5fe,stroke-width:1px;
+    classDef del fill:#e8f5e9,color:#1b5e20,stroke:#a5d6a7,stroke-width:1px;

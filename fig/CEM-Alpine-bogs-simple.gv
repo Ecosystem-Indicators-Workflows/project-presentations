@@ -1,0 +1,110 @@
+digraph G {
+    label = "Conceptual Ecosystem Model"
+    compound=true; #nodesep=1.0;
+    newrank=true;
+    rankdir=TB;
+    #layout=fdp
+    #layout=neato
+    concentrate=True;
+    #layout=twopi;
+    #{ node [ shape=parallelogram fontsize=10 fixedsize=true fillcolor=white style=filled width=1.25]
+    #    IN1 [label="Bioclimatic\nvariables"]
+    #    IN2 [label="Snowline\nand other\nindicators"]
+    #    IN3 [label="Mass\nbalance"]
+      #  IN4 [label="Species\ndistribution"]
+      # IN5 [label="Species\nabundance\nand diversity"]
+    #}
+  {
+    node [margin=0 fillcolor=lightblue fontcolor="#06020F" fontsize=12 shape= hexagon style=filled fixedsize=true width=1.75]
+    AE1 [label="Water"]
+    #AE2 [label="Groundwater"]
+    AE3 [label="Peat"]
+    #AE4 [label="Water\nquality"]
+    #AE5 [label="Ice substrate"]
+    #AE6 [label="Meltwater"]
+  }
+  {
+    node [ shape=ellipse fillcolor=lightblue fontcolor="#06020F" fontsize=12 style=filled fixedsize=true width=1.5]
+    #AP1 [label="Drying &\ndesiccation"]
+    AP2 [label="Precipitation"]
+    #AP3 [label="Erosion"]
+    AP4 [label="Fire"]
+    #AP5 [label="Decomposition"]
+  }
+  {
+    node [shape=rectangle fillcolor=white color="#F6020F" fontcolor=red style=filled fixedsize=true width=1.5]
+    
+    TR2 [label="Alien ungulates"]
+    TR3 [label="Pathogens"]
+    TR4 [label="Alien plants"]
+    TR5 [label="Infrastructure"]
+    TR6 [label="Climate change"]
+  }
+  
+  {
+    node [shape=ellipse fillcolor="#77c577" fontcolor=white fontsize=12 style=filled width=1.5]
+    BP1 [label="Evapo-\ntranspiration"] # (nutrients and propagules)
+  }
+  {
+    node [margin=0 fillcolor="#1ea51e" fontcolor=white fontsize=12 width=1.5 shape=hexagon style=filled fixedsize=true]
+    CB1 [label="Sphagnum moss"]
+    CB2 [label="Fauna\n(frogs, etc)"]
+  }
+  subgraph clusterBio {
+      label="Alpine Sphagnum bogs"
+      labelloc=bottom;
+      CB1 -> CB2
+      {rank="same"; CB1 AE1}
+      AE1 AE3 
+    }
+
+  #subgraph clusterMB {
+  #    rank="same";
+  #    label=""
+  #    style="invis"
+  #    {AP1 AP2}
+  #}
+
+TR6 -> AP4,BP1
+TR6 -> AP2 [ arrowhead=dot ]
+  #AP4 -> AP3
+  AP4 -> CB1 [ arrowhead=dot lhead=clusterBio]
+  BP1 -> AE1 [ arrowhead=dot ]
+  AP2 -> AE1
+  #AP1 -> AP3,CB1
+  TR4 -> CB2 [ arrowhead=dot lhead=clusterBio ]
+  #AP4 -> AE3 [ arrowhead=dot ]
+  TR3 -> CB1 [ arrowhead=dot lhead=clusterBio ]
+  TR2,TR5 -> AE3 [ arrowhead=dot lhead=clusterBio]
+  #TR2 -> TR4
+  CB1 -> AE3
+  AE1 -> CB1, AE3, CB2
+
+  #CB1->IN4 [ arrowhead=none ]
+
+  #AP2 -> CB3 [ arrowhead=dot lhead=clusterIce ]
+  #AP1 -> CB2 [ lhead=clusterIce ]
+  #AP2 -> CB4 [ lhead=clusterMelt ]
+  #BP2 -> CB1
+  #{CB3} -> CB4 [ ltail=clusterIce ] 
+  #CB1 -> CB5 [ ltail=clusterIce ]
+  #CB1 -> CB4 [ ltail=clusterIce lhead=clusterMelt ]
+  #BP1 -> {CB2 CB3}
+  #CB1 -> BP1
+  #AE5 -> {AE4 BP2 BP1}
+  #BP1 -> CB5
+  #TR1 -> AE4
+  #TR2 -> AE2 [ style=dashed ]
+  #TR2 -> AE4
+  #TR2 -> AE3 [arrowhead=dot style=dashed]
+  #TR3 -> {AE2 AE3} [ style=dashed ]
+  #TR3 -> AE1 [arrowhead=dot style=dashed]
+  #AE1 -> AP1
+  #AE2 -> AP2
+  #AE3 -> AP2
+  #AE4 -> AP2
+  #IN2->IN3 [ style=dashed  arrowhead=none color=grey ]
+  #IN1->{TR3; AE1; AE2} [style=dashed  arrowhead=none color=grey ]
+  #IN3->{AP1;AP2} [style=dashed arrowhead=none color=grey]
+  #CB4->IN5->CB5 [style=tapered arrowhead=none dir=both ]
+}

@@ -1,0 +1,30 @@
+gantt
+    title WP2: Requirements Gathering & Workflow Development Planning (2-Year Plan)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %Y
+    excludes    weekends
+
+    section Requirements Gathering
+    Identify workflow functionality for key user groups     :active, a1, 2026-03-01, 2026-05-15
+    Develop detailed use cases                             :a2, after a1, 2026-05-16, 2026-07-15
+    Understand high-level requirements & constraints       :a3, 2026-03-15, 2026-07-31
+
+    section Implementation Plans
+    PID implementation plan (draft → final)                :b1, after a3, 2026-06-15, 2026-08-15
+    FAIR4RS implementation plan (datasets & software)      :b2, after a3, 2026-06-15, 2026-08-31
+
+    section Two-Year Workflow Development Roadmap
+    Outline user requirements for ecosystem workflows      :c1, after a2, 2026-07-16, 2026-08-31
+    Document high-level requirements & constraints         :c2, after c1, 2026-09-01, 2026-09-30
+    Document detailed use cases (who/how/impact)           :c3, 2026-08-01, 2026-10-15
+    Prioritise Tranche 1 functionality (first 12 months)   :c4, after c2, 2026-10-01, 2026-11-15
+    Prioritise Tranche 2 functionality (following 12 months):c5, after c4, 2026-11-16, 2026-12-15
+
+    section Review & Update
+    Q4 Year 1 review of Tranche 2 requirements (milestone) :milestone, d1, 2026-12-15, 0d
+    Update roadmap based on Year 1 review                  :d2, after d1, 2026-12-16, 2027-01-31
+
+    section Deliverables (Documents)
+    Ecosystem Indicators workflow development plan         :del1, after c5, 2026-12-20, 2027-01-31
+    PID implementation plan (final)                        :del2, after b1, 2026-08-16, 2026-08-31
+    FAIR4RS implementation plan (final)                    :del3, after b2, 2026-09-01, 2026-09-15
