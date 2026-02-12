@@ -1,0 +1,7 @@
+- source: kick-off-meeting.qmd
+  confluence:
+    - id: '753665'
+      url: https://ecosystem-indicators-workflows.atlassian.net/wiki/spaces/PM/pages/753665
+  quarto-pub:
+    - id: d3894578-0e3f-48c9-acac-00947234881d
+      url: https://jrfep.quarto.pub/ecosystems-indicators-workflows-project
