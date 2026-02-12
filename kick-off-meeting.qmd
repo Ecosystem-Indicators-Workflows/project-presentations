@@ -18,6 +18,10 @@ title-slide-attributes:
     data-background-size: contain
 ---
 
+# Motivation
+
+##
+
 ### ARC Industry Laureate research fellowship
 Goal: build Australian capacity for implementing a nature positive agenda
 
@@ -252,12 +256,15 @@ Particularly we would like to have tools that allow user to identify ecosystem a
 
 :::
 
+# Project overview
+
 ## Why this project?
 
 Bottleneck in scaling indicator development across Australia's diverse ecosystems.
 
-::: {.r-stretch style="background:#fff4e8; padding:2rem; border-radius:12px;"}
-### 🚨 Existing approaches
+::: {style="background:#fff4e8; padding:2rem; border-radius:12px;"}
+🚨 **Existing approaches**
+
 - Generic indicators
 - Fragmented, ad‑hoc analytical methods  
 - Limited scalability & poor reproducibility  
@@ -272,13 +279,15 @@ Reproducible workflows for fit-for-purpose ecosystem‑specific indicators.
 
 ::: {.r-stretch style="background:#eef7ff; padding:2rem; border-radius:12px;"}
 
-### 🔧 What We're Building
+🔧 **What We're Building**
 
 - Modular, transparent, reproducible workflows  
 - Guided examples for all skill levels  
 - Shared standards: FAIR data, vocabularies & interoperability  
 - A community of practice for collaboration & skill sharing  
 :::
+
+# Aims & Impacts
 
 ## Aims & Impacts
 
@@ -320,17 +329,23 @@ Scalable systems supporting national environmental reporting and actionable insi
 :::
 
 
+# Outcomes and beneficiaries
 
 ## 📦 Outcomes
 
 ::: {.r-stretch style="background:#f5fff2; padding:2rem; border-radius:12px;"}
-### 🧩 Core Deliverables
+🧩 **Core Deliverables**
+
 - Modular workflow toolbox  
 - Scalable, adaptable indicator workflows  
 - FAIR analysis‑ready datasets  
 - Interoperable tools aligned to shared vocabularies  
 - A connected and empowered user community  
 :::
+
+##
+
+![](img/Aridity-Index-Indicator.png)
 
 ##  👥 Beneficiaries {.smaller}
 
@@ -341,6 +356,8 @@ Scalable systems supporting national environmental reporting and actionable insi
 - **Programmers with ecosystem knowledge:** Contribute to co-design, enable innovation.
 - **Students & early‑career professionals:** Skill development in reproducible science, modelling, workflow design.
 :::
+
+# Work packages
 
 ## Overview of Work packages
 
@@ -361,6 +378,10 @@ Scalable systems supporting national environmental reporting and actionable insi
 %%| fig-responsive: false
 ```
 
+##
+
+Responsible organisations: UNSW / QCIF / ARDC
+
 ## Work package details
 
 ```{mermaid}
@@ -370,6 +391,10 @@ Scalable systems supporting national environmental reporting and actionable insi
 %%| fig-responsive: false
 ```
 
+##
+
+Responsible organisations: UNSW / QCIF / ARDC
+
 ## Work package details
 
 ```{mermaid}
@@ -378,6 +403,12 @@ Scalable systems supporting national environmental reporting and actionable insi
 %%| file: fig/WP3.mmd
 %%| fig-responsive: false
 ```
+
+##
+
+Responsible organisations: UNSW / JCU / QCIF
+
+
 ## Work package details
 
 ```{mermaid}
@@ -386,6 +417,11 @@ Scalable systems supporting national environmental reporting and actionable insi
 %%| file: fig/WP4.mmd
 %%| fig-responsive: false
 ```
+
+
+##
+
+Responsible organisations: UNSW / JCU / QCIF
 
 ## Work package details
 
@@ -396,6 +432,11 @@ Scalable systems supporting national environmental reporting and actionable insi
 %%| fig-responsive: false
 ```
 
+
+##
+
+Responsible organisations: UNSW / JCU / QCIF
+
 ## Work package details
 
 ```{mermaid}
@@ -404,6 +445,11 @@ Scalable systems supporting national environmental reporting and actionable insi
 %%| file: fig/WP6.mmd
 %%| fig-responsive: false
 ```
+
+
+##
+
+Responsible organisations: UNSW / JCU / QCIF / ARDC
 
 ##  {.smaller background-image="https://live.staticflickr.com/65535/54676036502_07d648f4ab_b.jpg" background-opacity="0.3"}
 
