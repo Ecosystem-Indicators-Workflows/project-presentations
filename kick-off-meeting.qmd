@@ -451,6 +451,124 @@ Responsible organisations: UNSW / JCU / QCIF
 
 Responsible organisations: UNSW / JCU / QCIF / ARDC
 
+
+
+# Outputs
+
+## Overview of End of Project Outputs {.smaller}
+
+```{r}
+library(readxl)
+library(dplyr)
+outputs <- read_excel("assets/PP-output-outcomes.xlsx", sheet = "Outputs")
+outputs |> select(Code, OUTPUT) |> knitr::kable()
+```
+
+## EOP Output 1 {.smaller}
+
+```{r}
+slice(outputs,1) |> select(OUTPUT:BASELINE) |> t()|> knitr::kable()
+```
+
+
+## EOP Output 2 {.smaller}
+
+```{r}
+#| results: "asis"
+slice(outputs,2) |> select(OUTPUT:`WORK PACKAGES`) |> t()|> knitr::kable()
+sprintf("INDICATORS:\n\n%s",{slice(outputs,2) |> pull(`INDICATOR/S`)}) |> cat()
+
+```
+
+## EOP Output 2 {.smaller}
+
+```{r}
+#| results: "asis"
+sprintf("**MEASURE**:\n\n%s\n\n**Data SOURCE/S**:\n\n%s",
+  {slice(outputs,2) |> pull(`MEASURE`)},
+  {slice(outputs,2) |> pull(`DATA SOURCE/S`)}) |> cat()
+
+
+```
+
+
+## EOP Output 3 {.smaller}
+
+```{r}
+#| results: "asis"
+slice(outputs,3) |> select(OUTPUT:`WORK PACKAGES`) |> t()|> knitr::kable()
+sprintf("INDICATORS:\n\n%s",{slice(outputs,3) |> pull(`INDICATOR/S`)}) |> cat()
+
+```
+
+## EOP Output 3 {.smaller}
+
+```{r}
+#| results: "asis"
+sprintf("**MEASURE**:\n\n%s\n\n**Data SOURCE/S**:\n\n%s",
+  {slice(outputs,3) |> pull(`MEASURE`)},
+  {slice(outputs,3) |> pull(`DATA SOURCE/S`)}) |> cat()
+```
+
+
+## EOP Output 4 {.smaller}
+
+```{r}
+#| results: "asis"
+slice(outputs,4) |> select(OUTPUT:`WORK PACKAGES`) |> t()|> knitr::kable()
+sprintf("INDICATORS:\n\n%s",{slice(outputs,4) |> pull(`INDICATOR/S`)}) |> cat()
+
+```
+
+## EOP Output 4 {.smaller}
+
+```{r}
+#| results: "asis"
+sprintf("**MEASURE**:\n\n%s\n\n**Data SOURCE/S**:\n\n%s",
+  {slice(outputs,4) |> pull(`MEASURE`)},
+  {slice(outputs,4) |> pull(`DATA SOURCE/S`)}) |> cat()
+```
+
+## EOP Output 5 {.smaller}
+
+```{r}
+#| results: "asis"
+slice(outputs,5) |> select(OUTPUT:`WORK PACKAGES`) |> t()|> knitr::kable()
+sprintf("INDICATORS:\n\n%s",{slice(outputs,5) |> pull(`INDICATOR/S`)}) |> cat()
+
+```
+
+## EOP Output 5 {.smaller} 
+```{r}
+#| results: "asis"
+sprintf("**MEASURE**:\n\n%s\n\n**Data SOURCE/S**:\n\n%s",
+  {slice(outputs,5) |> pull(`MEASURE`)},
+  {slice(outputs,5) |> pull(`DATA SOURCE/S`)}) |> cat()
+```
+
+
+# Outcomes
+
+## Overview of End of Project Outputs {.smaller}
+
+```{r}
+outcomes <- read_excel("assets/PP-output-outcomes.xlsx", sheet = "Outcomes")
+outcomes |> select(Code, OUTCOME) |> knitr::kable()
+```
+
+
+## EOP Outcomes 1 {.smaller}
+
+```{r}
+#| results: "asis"
+sprintf("**INDICATORS**:\n\n%s\n\n**MEASURES**:\n\n%s",
+  {slice(outcomes,1) |> pull(`INDICATOR/S`)},
+  {slice(outcomes,1) |> pull(`MEASURE`)}) |> cat()
+
+
+```
+
+
 ##  {.smaller background-image="https://live.staticflickr.com/65535/54676036502_07d648f4ab_b.jpg" background-opacity="0.3"}
 
 This presentation was prepared by José R. Ferrer-Paris and is shared under license: [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed)
