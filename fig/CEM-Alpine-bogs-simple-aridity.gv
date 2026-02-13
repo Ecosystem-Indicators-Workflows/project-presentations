@@ -1,26 +1,32 @@
 digraph G {
     label = "Conceptual Ecosystem Model"
-    compound=true; #nodesep=1.0;
+    compound=true; 
     newrank=true;
     rankdir=TB;
     concentrate=True;
   {
-    node [margin=0 fillcolor=lightblue fontcolor="#06020F" fontsize=12 shape= hexagon style=filled fixedsize=true width=1.75]
+    node [margin=0 fillcolor="#a0a0a0" fontcolor="#06020F"  fontsize=12 shape= hexagon style=filled fixedsize=true width=1.75]
     AE1 [label="Water"]
     AE3 [label="Peat"]
   }
   {
     node [ shape=ellipse fillcolor=lightblue fontcolor="#06020F" fontsize=12 style=filled fixedsize=true width=1.5]
     AP2 [label="Precipitation"]
+  }
+  {
+    node [ shape=ellipse fillcolor="#a0a0a0" fontcolor="#06020F" fontsize=12 style=filled fixedsize=true width=1.5]
     AP4 [label="Fire"]
   }
   {
-    node [shape=rectangle fillcolor=white color="#F6020F" fontcolor=red style=filled fixedsize=true width=1.5]
+    node [shape=rectangle fillcolor=white color="#6F6F6F" fontcolor="#6F6F6F" style=filled fixedsize=true width=1.5]
     
     TR2 [label="Alien ungulates"]
     TR3 [label="Pathogens"]
     TR4 [label="Alien plants"]
     TR5 [label="Infrastructure"]
+  }
+  {
+    node [shape=rectangle fillcolor=white color="#F6020F" fontcolor=red style=filled fixedsize=true width=1.5]
     TR6 [label="Climate change"]
   }
   
@@ -29,7 +35,7 @@ digraph G {
     BP1 [label="Evapo-\ntranspiration"] # (nutrients and propagules)
   }
   {
-    node [margin=0 fillcolor="#1ea51e" fontcolor=white fontsize=12 width=1.5 shape=hexagon style=filled fixedsize=true]
+    node [margin=0 fillcolor="#919191" fontcolor=white fontsize=12 width=1.5 shape=hexagon style=filled fixedsize=true]
     CB1 [label="Sphagnum moss"]
     CB2 [label="Fauna\n(frogs, etc)"]
   }

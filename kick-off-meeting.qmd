@@ -344,6 +344,22 @@ Scalable systems supporting national environmental reporting and actionable insi
 
 ##
 
+
+```{dot}
+//| fig-width: 9.5
+//| fig-align: center
+//| file: fig/CEM-Alpine-bogs-simple-aridity.gv
+```
+
+##
+
+```{dot}
+//| fig-width: 12.5
+//| file: fig/Indicator-design-CHELSA.dot
+```
+
+## 
+
 ![](img/Aridity-Index-Indicator.png)
 
 ##  👥 Beneficiaries {.smaller}

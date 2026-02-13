@@ -1,0 +1,64 @@
+digraph G {
+    rankdir=LR;
+    compound=true;
+    newrank=true;
+    label="Indicator development for subcriterion C1: Aridity Index";
+    subgraph cluster_CHELSA {
+        style="dashed";
+        label = "Data source:\nCHELSA Version 2.1";
+        node [shape=component width=1.7 ]
+        {rank=same PREC PET}
+        PREC [label="Precipitation\n[mm/month]\nRaster, 30 arc-sec\nTime series\n1979 – 2019\nMonthly values"]
+        PET[label="PET (Penman)\n[mm/month]\nRaster, 30 arc-sec\nTime series\n1979 – 2019\nMonthly values"]
+     }
+
+    subgraph cluster_prep {
+        label = "Data preparation";
+        style="dashed";
+     ECO_PREC [label="Precipitation\n[mm/month]\nMean values \nTime series\n1979 – 2019\nMonthly values"; shape=component ]
+     ECO_PET[label="PET (Penman)\n[mm/month]\nMean values \nTime series\n1979 – 2019\nMonthly values"; shape=component ]
+     ANNUAL_PREC [label="Annual Precipitation\n[mm/year]\nData frame:\npolygon X year"; shape=component ]
+     ANNUAL_PET [label="Annual PET\n[mm/year]\nData frame:\npolygon X year"; shape=component ]
+     AI_CHELSA [label="Aridity Index\nAI=PREC/PET\nData frame:\npolygon X year" shape=component style=filled color="teal" fontcolor="white" bgcolor="white"]
+    }
+     subgraph cluster_RS {
+        fontcolor="black" bgcolor="orange"
+        color="orange";
+        label = "Relative Severity & Extent of Decline";
+        node [width=1.7 fontcolor="black" color="black"]
+        {rank=same ED  RS}
+        
+        RS [label="Relative severity\nRS=(FV-IV)/(CT-IV)\nPer polygon"; shape=component ]
+        ED [label="Cummulative\nExtent of decline\nweighted formula"; shape=component]
+        AI_smooth [label="Smooth AI trend\nLinear model\nPer polygon\nPredict RS for 2024"; shape=component]
+        
+        {rank=same Threshold, IV, FV}
+    }
+    subgraph cluster_uncertainty {
+        label = "Uncertainty";
+        style="solid" fontcolor="black" bgcolor="yellow"
+        color="yellow";
+        node [shape=box width=1.7 fontcolor="black" color="black"]
+         {rank=same TIME THR  PRED SIZE}
+        THR [label="CT selection"]
+        TIME [label="Annual variation"]
+        PRED [label="Future projection\n95% pred. interval"]
+        SIZE [label="Area of occurrences"]
+    }
+     PREC -> ECO_PREC [label="extract and\naggregate\nper polygon"] 
+     ECO_PREC -> ANNUAL_PREC [label="aggregate\nper year"] 
+     PET -> ECO_PET [label="extract and\naggregate\nper polygon"]
+     ECO_PET ->ANNUAL_PET [label="aggregate\nper year"] 
+     ANNUAL_PREC, ANNUAL_PET -> AI_CHELSA
+     IV [label="Initial value (IV):\npredicted AI 1975"]
+     Threshold [label="Threshold (CT):\nYears 2000-2002\nLower quantile of AI\nacross polygons"]
+     FV [label="Final values (FV):\npredicted AI 2024"]
+     
+     AI_CHELSA -> Threshold, AI_smooth
+     AI_smooth -> IV
+     AI_smooth -> FV
+     Threshold, IV, FV -> RS 
+     ED -> RS [dir="back"]
+     RS -> TIME,THR  [dir="both" lhead=cluster_uncertainty]
+     ED -> SIZE, THR [dir="both" lhead=cluster_uncertainty]
+}
