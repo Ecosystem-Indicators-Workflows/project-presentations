@@ -1,0 +1,29 @@
+flowchart LR
+    IND1>"Indicator 1"]:::WPtodo
+    IND2>"Indicator 2"]:::WPtodo
+    %%IND3>"Indicator 3"]:::WPtodo
+    %%IND4>"Indicator 4"]:::WPtodo
+    PLAT1[["Alpine bogs<br>assessment"]]:::WPtodo
+    %%PLAT2[["Status of<br>Australian<br>peatlands"]]:::WPtodo
+    WF1{WF1}:::WF
+    WF2{WF2}:::WF
+    %%WF1b{WF2*}:::WF
+    ECO1(["Alpine<br>bogs"]):::Ecos
+    %%ECO2(["Fleurieu<br>swamp"]):::Ecos
+    %%ECO3(["other<br>peatlands"]):::Ecos
+    RGA{{"Researcher<br>group A"}}:::RoleCore
+    %%RGB{{"Researcher<br>group B"}}:::RoleCore
+    RL4(("End Users<br>(state)")):::RoleExt
+    %%RL6(("End Users<br>(national)")):::RoleExt
+    
+    RGA --> ECO1 --> WF1 --> IND1 --> PLAT1
+    ECO1 --> WF2 --> IND2 --> PLAT1 
+    %%WF2 -.-> WF1b
+    %%RGB --> ECO2 & ECO3 --> WF1b --> IND3 & IND4 --> PLAT2
+    %%PLAT2 --> RL6
+    PLAT1 --> RL4
+    classDef WPtodo fill:white,stroke:#E51875,color:#E51875, stroke-width:4px
+    classDef WF fill:#E51875,stroke:#E51875,color:white, stroke-width:4px
+    classDef Ecos fill:#dfd,stroke:#040,color:#040, stroke-width:2px
+    classDef RoleExt fill:#fff,stroke:#8E489B,color:#8E489B, stroke-width:2px
+    classDef RoleCore fill:white,stroke:#00B0D5,color:black, stroke-width:4px

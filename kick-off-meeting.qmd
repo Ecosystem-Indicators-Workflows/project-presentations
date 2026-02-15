@@ -255,7 +255,7 @@ Particularly we would like to have tools that allow user to identify ecosystem a
 
 :::
 
-# Project overview {background-image="https://live.staticflickr.com/65535/54676029702_6ae0e2d8b4_b.jpg"}
+# Project overview {background-image="https://live.staticflickr.com/65535/54677183355_507c3f313d_b.jpg"}
 
 ## Why this project?
 
@@ -286,7 +286,99 @@ Reproducible workflows for fit-for-purpose ecosystem‑specific indicators.
 - A community of practice for collaboration & skill sharing  
 :::
 
-# Aims & Impacts {background-image="https://live.staticflickr.com/65535/54677183355_507c3f313d_b.jpg"}
+
+##
+
+
+::: {.panel-tabset}
+
+### Conceptual model
+
+```{dot}
+//| fig-width: 9.5
+//| fig-align: center
+//| file: fig/CEM-Alpine-bogs-simple-aridity.gv
+```
+
+### Indicator design
+
+```{dot}
+//| fig-width: 12.5
+//| file: fig/Indicator-design-CHELSA.dot
+```
+
+### Results
+
+![](img/Indicator-results.png)
+
+:::
+
+
+##
+
+
+::: {.panel-tabset}
+
+### Conceptual model
+
+```{dot}
+//| fig-width: 9.5
+//| fig-align: center
+//| file: fig/CEM-other-eco-aridity.gv
+```
+
+### Indicator design
+
+Same as before
+
+### Results
+
+New results in same format
+
+:::
+
+## 
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](img/Aridity-Index-Indicator.png) 
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment}
+![](img/Aridity-Index-Indicator-reuse.png)
+:::
+
+:::
+
+::::
+ 
+
+## Transparent and reproducible
+
+```{mermaid}
+%%| fig-align: center
+%%| file: fig/outputs-example-reuse.mmd
+%%| fig-responsive: false
+```
+
+- FAIR methods and datasets
+- Update outputs with new data
+
+## Scale Up
+
+```{mermaid}
+%%| fig-align: center
+%%| file: fig/outputs-example-scale-up.mmd
+%%| fig-responsive: false
+```
+
+# Aims & Impacts {background-image="https://live.staticflickr.com/65535/54676027522_bd9284f45c_b.jpg"}
 
 ## Aims & Impacts
 
@@ -328,7 +420,7 @@ Scalable systems supporting national environmental reporting and actionable insi
 :::
 
 
-# Outcomes and beneficiaries {background-image="https://live.staticflickr.com/65535/54676027522_bd9284f45c_b.jpg"}
+# Outcomes and beneficiaries {background-image="https://live.staticflickr.com/65535/53857123404_e575c63115_k.jpg"}
 
 ## 📦 Outcomes
 
@@ -342,26 +434,6 @@ Scalable systems supporting national environmental reporting and actionable insi
 - A connected and empowered user community  
 :::
 
-##
-
-
-```{dot}
-//| fig-width: 9.5
-//| fig-align: center
-//| file: fig/CEM-Alpine-bogs-simple-aridity.gv
-```
-
-##
-
-```{dot}
-//| fig-width: 12.5
-//| file: fig/Indicator-design-CHELSA.dot
-```
-
-## 
-
-![](img/Aridity-Index-Indicator.png)
-
 ##  👥 Beneficiaries {.smaller}
 
 ::: {.r-stretch style="background:#fff7e8; padding:2rem; border-radius:12px;"}
@@ -372,7 +444,7 @@ Scalable systems supporting national environmental reporting and actionable insi
 - **Students & early‑career professionals:** Skill development in reproducible science, modelling, workflow design.
 :::
 
-# Work packages {background-image="https://live.staticflickr.com/65535/54676036502_07d648f4ab_b.jpg"}
+# Work packages {background-image="https://live.staticflickr.com/65535/53488067619_72e04e487f_b.jpg" background-color="black"}
 
 ## Overview of Work packages
 
@@ -383,8 +455,10 @@ Scalable systems supporting national environmental reporting and actionable insi
 %%| fig-responsive: false
 ```
 
+# Work packages in detail {background-image="https://live.staticflickr.com/65535/53488067619_72e04e487f_b.jpg" background-color="black"}
 
-## Work package details
+
+## WP 1
 
 ```{mermaid}
 %%| fig-width: 6.5
@@ -395,9 +469,17 @@ Scalable systems supporting national environmental reporting and actionable insi
 
 ##
 
-Responsible organisations: UNSW / QCIF / ARDC
+February to March 2026:
 
-## Work package details
+- UNSW to recruit roles + execute subcontracts
+- Everyone contributes to shape governance
+- ARDC/UNSW lead project page
+
+April to May 2026:
+
+- ARDC/UNSW lead FAIR initiation
+
+## WP 2
 
 ```{mermaid}
 %%| fig-width: 6.5
@@ -408,9 +490,15 @@ Responsible organisations: UNSW / QCIF / ARDC
 
 ##
 
-Responsible organisations: UNSW / QCIF / ARDC
+April to July 2026:
 
-## Work package details
+- Core Team at UNSW lead development plan
+- QCIF to contribute
+- Input from thematic and technical experts
+- Input from potential users
+- UNSW/ARDC leading implementation plans 
+
+## WP 3 
 
 ```{mermaid}
 %%| fig-width: 6.5
@@ -421,10 +509,19 @@ Responsible organisations: UNSW / QCIF / ARDC
 
 ##
 
-Responsible organisations: UNSW / JCU / QCIF
+March to April 2026:
 
+- UNSW and JCU work on vocabularies, other tools
 
-## Work package details
+April to July 2026:
+
+- UNSW, QCIF and JCU work on data pipelines tools
+
+May to August 2026:
+
+- UNSW and QCIF documenting data pipelines
+
+## WP 4
 
 ```{mermaid}
 %%| fig-width: 6.5
@@ -433,12 +530,22 @@ Responsible organisations: UNSW / JCU / QCIF
 %%| fig-responsive: false
 ```
 
-
 ##
 
-Responsible organisations: UNSW / JCU / QCIF
+May 2026 to November 2027
 
-## Work package details
+- UNSW and QCIF work on first (2026) and second (2027) tranche of workflows
+- Supporting role from thematic experts
+- Contributions from user community
+- Contributions from potential end-users
+
+May 2026 to December 2027
+
+- Platform services: UNSW and JCU with QCIF? additional partner institutions? 
+- UNSW and QCIF execute implementation plans
+
+
+## WP 5
 
 ```{mermaid}
 %%| fig-width: 6.5
@@ -450,9 +557,18 @@ Responsible organisations: UNSW / JCU / QCIF
 
 ##
 
-Responsible organisations: UNSW / JCU / QCIF
+October 2026 to February 2027:
 
-## Work package details
+- UNSW, JCU and QCIF work on requirements, design
+- Input from thematic and technical experts
+- Input from potential users
+
+March 2027 to November 2027:
+
+- UNSW, JCU and QCIF work on Minimum Viable Products
+- Feedback from user community and potential users
+
+## WP 6
 
 ```{mermaid}
 %%| fig-width: 6.5
@@ -464,11 +580,23 @@ Responsible organisations: UNSW / JCU / QCIF
 
 ##
 
-Responsible organisations: UNSW / JCU / QCIF / ARDC
+March 2026 to December 2027:
+
+- UNSW and ARDC work on communication plan
+- All contribute to implement communication plan
+
+October 2026 to April 2027:
+
+- UNSW, ARDC and QCIF work on training material
+- All contribute to deliver first community event
+
+May 2026 to Dec 2027
+
+- UNSW, ARDC publish user stories
+- All contribute to deliver second community event
 
 
-
-# Outputs
+# Outputs {background-image="https://live.staticflickr.com/65535/53911440004_e7d8a1ad22_k.jpg" background-color="black"}
 
 ## Overview of End of Project Outputs {.smaller}
 
@@ -562,9 +690,9 @@ sprintf("**MEASURE**:\n\n%s\n\n**Data SOURCE/S**:\n\n%s",
 ```
 
 
-# Outcomes
+# Outcomes {background-image="https://live.staticflickr.com/65535/53911440004_e7d8a1ad22_k.jpg" background-color="black"}
 
-## Overview of End of Project Outputs {.smaller}
+## Overview of End of Project Outcomes {.smaller}
 
 ```{r}
 outcomes <- read_excel("assets/PP-output-outcomes.xlsx", sheet = "Outcomes")
@@ -582,6 +710,9 @@ sprintf("**INDICATORS**:\n\n%s\n\n**MEASURES**:\n\n%s",
 
 
 ```
+
+
+# Thanks! {background-image="https://live.staticflickr.com/65535/54676036502_07d648f4ab_b.jpg" background-color="black"}
 
 
 ##  {.smaller background-image="https://live.staticflickr.com/65535/54676036502_07d648f4ab_b.jpg" background-opacity="0.3"}
@@ -609,7 +740,7 @@ Photos from:
 
 Wikimedia images: - [Menindee_Lakes, New_South_Wales, Australia - NASA Earth Observatory](https://commons.wikimedia.org/wiki/File:Menindee_Lakes,_New_South_Wales,_Australia_-_NASA_Earth_Observatory.jpg) - [Gondwana rainforest at Dorrigo National Park](https://commons.wikimedia.org/wiki/File:Gondwana_rainforest_at_Dorrigo_National_Park_%286611254443%29.jpg) - [Dugong Marsa Alam](https://commons.wikimedia.org/wiki/File:Dugong_Marsa_Alam.jpg)
 
-Flickr images: - ["Approaching Lake Bill"](https://www.flickr.com/photos/apurdam/11540276563/in/photostream/) by [Andrew Purdam](https://www.flickr.com/photos/apurdam/) - ["Mountain Ash of the Black Spur Drive"](https://www.flickr.com/photos/nicholasjones/16653543556) by [Nicholas Jones](https://www.flickr.com/photos/nicholasjones/) - ["Fuente"](https://flic.kr/p/2riwYLw), ["Paciente"](https://flic.kr/p/2riwWKh), ["Efímero"](https://flic.kr/p/2riwW6G) and ["La Ruta"](https://flic.kr/p/2riCRFR) by [José Rafael Ferrer-Paris](https://www.flickr.com/photos/199798864@N08/)
+Flickr images: - ["Approaching Lake Bill"](https://www.flickr.com/photos/apurdam/11540276563/in/photostream/) by [Andrew Purdam](https://www.flickr.com/photos/apurdam/) - ["Mountain Ash of the Black Spur Drive"](https://www.flickr.com/photos/nicholasjones/16653543556) by [Nicholas Jones](https://www.flickr.com/photos/nicholasjones/) - ["Fuente"](https://flic.kr/p/2riwYLw), ["Paciente"](https://flic.kr/p/2riwWKh), ["Efímero"](https://flic.kr/p/2riwW6G) ["Tarawi Nature Reserve"](https://flic.kr/p/2q8YdSh), ["Maroubra"](https://flic.kr/p/2q4aQrb), ["Paseo por Bundeena"](https://flic.kr/p/2puyk1p) and ["La Ruta"](https://flic.kr/p/2riCRFR) by [José Rafael Ferrer-Paris](https://www.flickr.com/photos/199798864@N08/)
 
 Other diagrams created with Graphviz and Mermaid with source code shared under the CC BY-SA 4.0 license.
 
