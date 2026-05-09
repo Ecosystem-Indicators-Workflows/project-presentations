@@ -1,0 +1,5 @@
+To add bootstrap icons in the text, activate this extension:
+
+```sh
+quarto install extension shafayetShafee/bsicons
+```

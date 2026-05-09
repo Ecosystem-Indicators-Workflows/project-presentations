@@ -1,0 +1,391 @@
+---
+title: "Examples of Ecosystems Indicators Workflows"
+subtitle: "Shaping the Workflow: Co-designing Ecosystem Indicators "
+editor_options: 
+  chunk_output_type: console
+format: 
+  revealjs:
+    theme: default
+    footer: "Ecosystem Indicatos Workflows / 19 May 2026 / EIW project team"
+    logo: assets/logo_CES.png
+    css: 
+     - css/logo.css
+     - css/custom.css
+bibliography: references.bib
+preview-links: true
+title-slide-attributes:
+    data-background-image: "assets/slide-header-2.png"
+    data-background-size: contain
+---
+
+# Project overview {background-image="https://live.staticflickr.com/65535/54677183355_507c3f313d_b.jpg"}
+
+## Ecosystem Indicator Workflows
+
+A modular, fit-for-purpose toolbox that supports the development of ecosystem-specific indicators.
+
+<https://doi.org/10.3565/j5sq-a757>
+
+::: {.r-stretch style="background:#eef7ff; padding:2rem; border-radius:12px;"}
+
+🔧 **Why this project?**
+
+
+Australia's diverse ecosystems require tailored indicators for monitoring, assessment, and management.
+
+Research infrastructure is critical to accelerate development of indicators for a wide range of Australia’s ecosystems
+
+:::
+
+## 📦 Outcomes
+
+::: {.r-stretch style="background:#f5fff2; padding:2rem; border-radius:12px;"}
+🧩 **Core Deliverables**
+
+- Modular workflow toolbox  
+- Scalable, adaptable indicator workflows  
+- FAIR analysis‑ready datasets  
+- Interoperable tools aligned to shared vocabularies  
+- A connected and empowered user community  
+:::
+
+
+## Aims & Impacts
+
+A framework for developing fit-for-purpose ecosystem-specific indicators
+
+::: {style="background:#e8fef3; padding:1rem; border-radius:12px;"}
+- Design modular, transparent, and reproducible workflow adaptable to:
+  - Different datasets  
+  - Ecosystem types  
+  - Policy and reporting needs  
+:::
+
+::: {style="background:#eef1ff; padding:1rem; border-radius:12px;"}
+Transparent, defensible, scientifically rigorous indicators
+:::
+
+
+
+# Reproducible assessments {background-image="https://live.staticflickr.com/8648/16653543556_a498546030_b.jpg" background-color="white" background-opacity="50%"}
+
+##
+
+### Mountain Ash Ecosystem Assessment {.smaller}
+
+IUCN Red List of Ecosystems assessment by @Burns_2015.
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+<a data-flickr-embed="true" data-header="true" data-footer="true" href="https://www.flickr.com/photos/nicholasjones/16653543556" title="Mountain Ash of the Black Spur Drive"><img src="https://live.staticflickr.com/8648/16653543556_a498546030_w.jpg" width="400" height="267" alt="Mountain Ash of the Black Spur Drive"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+:::
+
+::: {.column width="60%"}
+
+*Key processes*: Vegetation-fire feedbacks, trees as foundation spp for other biota & functions
+
+*Key threats*: Logging & fire regime shift, climate change
+
+:::
+::::
+
+
+## Reproducible workflow {.smaller}
+
+
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+![](img/IUCN_mountain_ash-workflow.png)
+
+@Guru_2016
+
+:::
+
+::: {.column width="30%"}
+
+::: {.fragment}
+Data:
+
+![](img/tern-logo.png){height=40}
+
+Scripts:
+
+![](img/Rlogo.png){height=40}
+
+
+Environment:
+
+CoESRA Desktop
+
+![](img/kepler-logo.png){height=40}
+
+Version control: 
+
+![](img/Bitbucket_attribution_light.png){height=40}
+
+:::
+:::
+
+::::
+ 
+# Rerproducible indicator development {background-image="https://live.staticflickr.com/3675/11540276563_11931ea5b1_4k.jpg" background-color="black"}
+
+
+##  {.smaller}
+
+**Alpine Sphagnum Bog and Associated Fen** in the IUCN Red List of Ecosystems assessment of Australia's Alpine and Subalpine Ecosystems[@Rowland_2026]
+
+
+
+```{dot}
+//| fig-width: 8.5
+//| fig-align: center
+//| file: fig/CEM-Alpine-bogs-simple.gv
+```
+
+
+##
+
+::: {.panel-tabset}
+
+### Conceptual model
+
+```{dot}
+//| fig-width: 9.5
+//| fig-align: center
+//| file: fig/CEM-Alpine-bogs-simple-aridity.gv
+```
+
+### Indicator design
+
+```{dot}
+//| fig-width: 12.5
+//| file: fig/Indicator-design-CHELSA.dot
+```
+
+### Results
+
+![](img/Indicator-results.png)
+
+:::
+
+
+##
+
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+![](img/Aridity-Index-Indicator.png){height=660}
+
+:::
+
+::: {.column width="30%"}
+
+::: {.fragment}
+Data:
+
+![The LIST](img/The-LIST-logo.jpg){height=50}
+![CHELSA](img/chelsa_logo.gif){height=50}
+
+Scripts:
+
+![R](img/Rlogo.png){height=50}
+![Python](img/python-logo.png){height=50}
+
+Documentation:
+
+![Jupyter Notebook](img/jupyter-logo.svg){height=50}
+![quarto](img/quarto-logo.png){height=50}
+
+Version control: 
+
+{{< bi git >}}
+{{< bi github >}}
+
+:::
+:::
+
+::::
+ 
+## Transparent and reproducible
+
+```{mermaid}
+%%| fig-align: center
+%%| file: fig/outputs-example-reuse.mmd
+%%| fig-responsive: false
+```
+
+- FAIR methods and datasets
+- Update outputs with new data
+
+# Reusable indicators {background-image="https://live.staticflickr.com/3675/11540276563_11931ea5b1_4k.jpg" background-color="black"}
+
+## Adopt and adapt indicators
+
+```{mermaid}
+%%| fig-align: center
+%%| file: fig/outputs-example-scale-up.mmd
+%%| fig-responsive: false
+```
+
+##
+
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+![](img/Aridity-Index-Indicator-reuse.png){height=660}
+
+:::
+
+::: {.column width="30%"}
+
+::: {.fragment}
+Data:
+
+[Enviro Data SA](https://data.environment.sa.gov.au/Pages/default.aspx)
+![CHELSA](img/chelsa_logo.gif){height=50}
+
+Scripts:
+
+![R](img/Rlogo.png){height=50}
+![Python](img/python-logo.png){height=50}
+
+Documentation:
+
+![Jupyter Notebook](img/jupyter-logo.svg){height=50}
+![quarto](img/quarto-logo.png){height=50}
+
+Version control: 
+
+{{< bi git >}}
+{{< bi github >}}
+:::
+
+:::
+
+::::
+ 
+
+
+
+
+##
+::: {.panel-tabset}
+
+### F2.5 
+
+F2.5 Ephemeral freshwater lakes, e.g. Menindee Lakes, Lake Cowal, Peery Lake, etc.
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+<a title="NASA&#039;s Earth Observatory, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Menindee_Lakes,_New_South_Wales,_Australia_-_NASA_Earth_Observatory.jpg"><img width="512" alt="A system of ephemeral, freshwater lakes which are fed by overflow of the Darling River in Australia" src="img/F2_5.jpg"></a>
+
+:::
+
+::: {.column width="60%"}
+
+*Key processes*: Water volume-chemistry interactions & trophic web, river inflows, waterbird abundance
+
+*Key threats*: Water extraction, water pollution, eutrophication, climate change
+
+:::
+
+::::
+
+### M1.1
+
+M1.1 Seagrass meadows, e.g. Shark Bay in Western Australia
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+<a title="Julien Willem, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Dugong_Marsa_Alam.jpg"><img width="512" alt="Dugong near Marsa Alam, Egypt" src="img/M1_1.jpg"></a>
+
+:::
+
+::: {.column width="60%"}
+
+*Key processes*: Interactions & trophic web, low-energy waves vs. storms, large herbivores
+
+*Key threats*: Sedimentation, eutrophication, climate change
+
+:::
+
+::::
+
+### T1.1 
+
+T1.1 Tropical-subtropical lowland rainforest, e.g. Gondwana rainforests, warm temperate rainforests, ...
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+<a title="Andrea Schaffer from Sydney, Australia, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Gondwana_rainforest_at_Dorrigo_National_Park_(6611254443).jpg"><img width="512" alt="Gondwana rainforest at Dorrigo National Park (6611254443)" src="img/T1_1.jpg"></a>
+
+:::
+
+::: {.column width="60%"}
+
+*Key processes*: Trophic web, gap dynamics, microclimate feedbacks, foundation species
+
+*Key threats*: Climate change, fire regime shifts, invasive species, logging legacies
+
+:::
+
+::::
+
+:::
+
+
+
+# Thanks! {background-image="https://live.staticflickr.com/65535/54676036502_07d648f4ab_b.jpg" background-color="black"}
+
+
+##  {.smaller background-image="https://live.staticflickr.com/65535/54676036502_07d648f4ab_b.jpg" background-opacity="0.3"}
+
+This presentation was prepared by José R. Ferrer-Paris and is shared under license: [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed)
+
+::: panel-tabset
+### Links
+
+It was created using  [Quarto](https://quarto.org/docs/presentations/), [Mermaid](https://mermaid.js.org/), [Graphviz](https://graphviz.org/) and [reveal.js](https://revealjs.com/). 
+
+Slides are available at:
+
+[rpubs.com/jrfep](https://rpubs.com/jrfep/ecosystem-indicator-workflows).
+
+Source code available at:
+
+[github/Ecosystem-Indicators-Workflows/](https://github.com/Ecosystem-Indicators-Workflows/project-presentations).
+
+### Images and figures
+
+Photos from:
+
+Wikimedia images: - [Menindee_Lakes, New_South_Wales, Australia - NASA Earth Observatory](https://commons.wikimedia.org/wiki/File:Menindee_Lakes,_New_South_Wales,_Australia_-_NASA_Earth_Observatory.jpg) - [Gondwana rainforest at Dorrigo National Park](https://commons.wikimedia.org/wiki/File:Gondwana_rainforest_at_Dorrigo_National_Park_%286611254443%29.jpg) - [Dugong Marsa Alam](https://commons.wikimedia.org/wiki/File:Dugong_Marsa_Alam.jpg)
+
+Flickr images: - ["Approaching Lake Bill"](https://www.flickr.com/photos/apurdam/11540276563/in/photostream/) by [Andrew Purdam](https://www.flickr.com/photos/apurdam/) - ["Mountain Ash of the Black Spur Drive"](https://www.flickr.com/photos/nicholasjones/16653543556) by [Nicholas Jones](https://www.flickr.com/photos/nicholasjones/) - ["Fuente"](https://flic.kr/p/2riwYLw), and ["La Ruta"](https://flic.kr/p/2riCRFR) by [José Rafael Ferrer-Paris](https://www.flickr.com/photos/199798864@N08/)
+
+Other diagrams created with Graphviz and Mermaid for the ARDC Ecosystem Indicators Workflow project [@ARDC_2026_EIW], with source code shared under the CC BY-SA 4.0 license.
+
+### References
+
+::: {#refs}
+:::
+
+:::
