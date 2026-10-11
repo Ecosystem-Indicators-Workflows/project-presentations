@@ -202,9 +202,8 @@ Source code available at:
 
 Photos from:
 
-Wikimedia images: - [Menindee_Lakes, New_South_Wales, Australia - NASA Earth Observatory](https://commons.wikimedia.org/wiki/File:Menindee_Lakes,_New_South_Wales,_Australia_-_NASA_Earth_Observatory.jpg) - [Gondwana rainforest at Dorrigo National Park](https://commons.wikimedia.org/wiki/File:Gondwana_rainforest_at_Dorrigo_National_Park_%286611254443%29.jpg) - [Dugong Marsa Alam](https://commons.wikimedia.org/wiki/File:Dugong_Marsa_Alam.jpg)
 
-Flickr images: - ["Approaching Lake Bill"](https://www.flickr.com/photos/apurdam/11540276563/in/photostream/) by [Andrew Purdam](https://www.flickr.com/photos/apurdam/) - ["Mountain Ash of the Black Spur Drive"](https://www.flickr.com/photos/nicholasjones/16653543556) by [Nicholas Jones](https://www.flickr.com/photos/nicholasjones/) - ["Fuente"](https://flic.kr/p/2riwYLw), and ["La Ruta"](https://flic.kr/p/2riCRFR) by [José Rafael Ferrer-Paris](https://www.flickr.com/photos/199798864@N08/)
+Flickr images: - ["Fuente"](https://flic.kr/p/2riwYLw), ["Paseo por Bundeena"](https://flic.kr/p/2puyk1p) and ["La Ruta"](https://flic.kr/p/2riCRFR) by [José Rafael Ferrer-Paris](https://www.flickr.com/photos/199798864@N08/)
 
 Other diagrams created with Graphviz and Mermaid for the ARDC Ecosystem Indicators Workflow project [@ARDC_2026_EIW], with source code shared under the CC BY-SA 4.0 license.
 
