@@ -134,7 +134,7 @@ Version control:
 
 ::::
  
-# Rerproducible indicator development {background-image="https://live.staticflickr.com/3675/11540276563_11931ea5b1_4k.jpg" background-color="black"}
+# Reproducible indicator development {background-image="https://live.staticflickr.com/3675/11540276563_11931ea5b1_4k.jpg" background-color="black"}
 
 
 ##  {.smaller}
