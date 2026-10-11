@@ -1,3 +1,10 @@
 p.smallcaption {
     font-size: 0.6em;
   }
+
+.circle-img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
