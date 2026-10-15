@@ -178,6 +178,26 @@ A series of community events has been designed to align with the Workflow develo
 
 ![](img/EIW-project-plan-context.jpg)
 
+##
+
+EIW project finishes in Feb 2028
+
+- Our success depends a strong user community
+- A modular toolbox for workflow development
+- Minimum viable product for catalogue and dashboard
+
+Scaling up workflow development after Feb 2028 will depend on:
+
+- Widespread support of the user community
+- Maintainance and refinement of tools
+- Mature API / webservices for end users
+
+## AI challenges and opportunities
+
+- Community driven vs. AI solutions
+- AI agents using and improving reproducible workflows 
+- API services accessible to AI agents? 
+
 # Thanks! {background-image="https://live.staticflickr.com/65535/54676036502_07d648f4ab_b.jpg" background-color="black"}
 
 
